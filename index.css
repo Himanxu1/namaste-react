@@ -1,3 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #heading{
     color:red
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.logo{
+    width: 100px;
+    height: 100px;
+} 
+
+.navbar > ul{
+    display: flex;
+    margin-right: 40px;
+
+}
+.navbar > ul >li{
+    list-style-type: none;
+    padding:10px ;
+    font-size: 25px;
+   
+}
+.navbar > ul > li .link{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.res-card{
+ width: 250px;
+ height: 250px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+ font-family: Georgia, Times, 'Times New Roman', serif
+} 
+
+.res-image{
+    width: 250px;
+
+}
+
+.res-content{
+    display: grid;
+    place-items: center;
+}
+
+.shimmer-card{
+    width: 250px;
+    height: 250px;
+    background-color:rgb(228, 225, 222);
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.login-btn{
+    margin-right: 50px;
+  
+}
+.login-btn button{
+    padding: 8px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+
+.login-btn button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+.menu-container{
+    display: grid;
+    place-items: center;
+}
+
+.restaurant-description{
+    display: grid;
+    place-items: center;
+
+}
+
+.menu-card{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: azure; */
+    
+
+}
+.menu-info-container{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.menu-info-container p{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+.rating{
+    display:flex;
+    font-size: 20px;
+}
+
+.restaurant-name{
+    font:900;
+    font-size: 22px;
+    font-family:sans-serif
+}
+
+.cart-item{
+    text-align: center;
+}
+
+.cart-restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.clear-btn{
+    margin-left: 20px;
+
+}
+.cart-head{
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    border: 1px solid rgb(179, 176, 176);
+    color: black;
+    width: 600px;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(3, 3, 3);
+    text-align: center;
+    margin-top: 50px;
+   position: relative;
+    /* top: 20px; */
+}
+
+.res-card-link{
+    text-decoration: none;
+    color: black;
+}
+
+.footer p{
+  padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 25px;
+}
+
+.search-input{
+    padding: 15px 20px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color:rgb(213, 219, 219);
+    font-size: 20px;
+}
+.search-input::placeholder{
+    font-size: 15px;
+}
+.search-btn{
+    margin-left: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    padding-right: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+.search-btn:hover{
+    color:black;
+    background: white;  
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.shimmer-img{
+    background-color:rgb(228, 225, 222);
+    width: 300px;
+    height: 300px;
+}
+
+.menu-image-div{
+    position: relative;
+}
+
+.menu-card-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    z-index: 100;
+    /* position: absolute; */
+}
+.menu-card-btn{
+    padding: 6px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    position: absolute;
+    top: 80px;
+    border-radius: 10px;
+    left: 20px;
+    cursor: pointer;
+}
+.menu-card-btn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.delete-icons{
+   font-size: 30px;
+   margin-left: 200px;
+}
+.delete-icons:hover{
+    color: red;
+    
 }
